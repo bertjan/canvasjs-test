@@ -11,7 +11,7 @@ export class ChartDataService {
   constructor(private http: HttpClient) { }
 
   getChartData(): Observable<ChartData[]> {
-    return this.http.get<ChartData[]>('/assets/api-data.json');
+    return this.http.get<ChartData[]>('./assets/api-data.json');
   }
 
 }
